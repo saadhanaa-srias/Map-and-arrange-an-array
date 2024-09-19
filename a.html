@@ -1,0 +1,39 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="filename.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <h2> javascript Array sort</h2>
+<p>Click the buttom to sort the Array in ascending order.</p>
+<button onclick="ascending()">Ascending order</button>
+<button onclick="descending()">Descending order</button>
+<p id="result"></p>
+<button onclick="Function()">Try it</button>
+<p id="reason"></p>
+<script>
+  var points=[29,11,35,12];
+  document.getElementById("result").innerHTML=points;
+  
+  function ascending(){
+    points.sort(function(a,b){return a-b});
+    document.getElementById("result").innerHTML=points;}
+  
+  function descending(){
+    points.sort(function(a,b){return b-a});
+    document.getElementById("result").innerHTML=points;}
+
+  function Function(){
+    var x=56;
+    var y=34;
+    var a = eval("x+y")+"<br>";
+    var b =eval("99*2")+"<br>";
+    var c = eval("y-x")+"<br>";
+    var res = a+b+c; //concatenates the string 
+    document.getElementById("reason").innerHTML=res;}
+</script>
+</body>
+</html>
